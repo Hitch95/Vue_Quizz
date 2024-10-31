@@ -6,8 +6,9 @@ import QuizComponent from './components/QuizComponent.vue'
 // Create a jsdom environment for the tests
 import { JSDOM } from 'jsdom'
 const dom = new JSDOM(`<!DOCTYPE html><html><body></body></html>`)
-document = dom.window.document
-window = dom.window
+// Type assertion to assign dom.window to the global window object
+global.document = dom.window.document
+global.window = dom.window as unknown as Window & typeof globalThis
 
 describe('App.vue', () => {
   beforeEach(() => {
