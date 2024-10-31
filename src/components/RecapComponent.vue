@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, computed } from 'vue'
+import { computed } from 'vue'
 
 const props = defineProps({
   quiz: Object,
@@ -13,7 +13,7 @@ const props = defineProps({
 })
 
 const score = computed(() => {
-  return props.quiz?.questions.reduce((acc, question, key) => {
+  return props.quiz?.questions.reduce((acc, question, key: number) => {
     const isCorrect = question.correct_answer === props.answers?.[key]
     if (isCorrect) {
       return acc + 1

@@ -1,12 +1,16 @@
 import { fileURLToPath, URL } from 'node:url'
-
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
+import type { InlineConfig } from 'vitest'
+import type { UserConfig } from 'vite'
+
 // https://vite.dev/config/
-export default defineConfig({
+type ViteConfig = UserConfig & { test: InlineConfig }
+const config: ViteConfig = {
+  base: './',
   plugins: [vue(), vueJsx(), vueDevTools()],
   resolve: {
     alias: {
@@ -27,4 +31,5 @@ export default defineConfig({
       },
     },
   },
-})
+}
+export default defineConfig(config)
