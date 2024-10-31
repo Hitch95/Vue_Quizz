@@ -1,10 +1,14 @@
 <template>
-  <div v-if="state === 'error'">
-    <p data-test="error-message">Impossible de charger le quizz</p>
-  </div>
+  <div
+    class="bg-neutral-900 h-screen text-neutral-200 flex flex-col items-center justify-center"
+  >
+    <div v-if="state === 'error'">
+      <p data-test="error-message">Impossible de charger le quizz</p>
+    </div>
 
-  <div :aria-busy="state === 'loading'">
-    <QuizComponent :quiz="computedQuiz" v-if="computedQuiz" />
+    <div :aria-busy="state === 'loading'">
+      <QuizComponent :quiz="computedQuiz" v-if="computedQuiz" />
+    </div>
   </div>
 </template>
 

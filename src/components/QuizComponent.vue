@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>{{ quiz.title }}</h3>
+    <h3 class="mb-4 font-semibold text-indigo-300">{{ quiz.title }}</h3>
     <ProgressComponent :value="step" :max="quiz.questions.length - 1" />
     <QuestionComponent
       :question="question"

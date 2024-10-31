@@ -15,6 +15,7 @@
       </li>
     </ul>
     <button
+      class="py-2.5 px-6 text-sm max-h-max bg-indigo-500 text-white rounded-full cursor-pointer font-medium text-center shadow-xs transition-all duration-500 hover:bg-indigo-700 mt-7"
       :disabled="!hasAnswer"
       @click="
         (() => {

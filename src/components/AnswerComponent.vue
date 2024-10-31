@@ -1,5 +1,5 @@
 <template>
-  <label :for="id" :class="classes">
+  <label :for="id" :class="classes" class="cursor-pointer">
     <input
       :id="id"
       type="radio"
