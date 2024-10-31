@@ -1,0 +1,37 @@
+[
+  {
+    "text": "¿Cuál es la capital de Francia?",
+    "options": ["Paris", "London", "Berlin", "Madrid"],
+    "correct": 0
+  },
+  {
+    "text": "¿Quién escribió «Matar a un ruiseñor»?",
+    "options": [
+      "Harper Lee",
+      "Mark Twain",
+      "Ernest Hemingway",
+      "F. Scott Fitzgerald"
+    ],
+    "correct": 0
+  },
+  {
+    "text": "¿Cuál es el planeta más grande de nuestro sistema solar?",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "correct": 2
+  },
+  {
+    "text": "¿Cuál es el símbolo químico del agua?",
+    "options": ["H2O", "O2", "CO2", "NaCl"],
+    "correct": 0
+  },
+  {
+    "text": "¿Quién pintó la Mona Lisa?",
+    "options": [
+      "Vincent van Gogh",
+      "Pablo Picasso",
+      "Leonardo da Vinci",
+      "Claude Monet"
+    ],
+    "correct": 2
+  }
+]
