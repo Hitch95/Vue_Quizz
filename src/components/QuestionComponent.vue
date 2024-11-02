@@ -19,7 +19,7 @@
       :disabled="!hasAnswer"
       @click="
         (() => {
-          emits('answer', answer)
+          emits('answer', { answer: answer, index: props.index })
           answer = ''
         })()
       "
@@ -43,6 +43,10 @@ interface Question {
 const props = defineProps({
   question: {
     type: Object as () => Question,
+    required: true,
+  },
+  index: {
+    type: Number,
     required: true,
   },
 })
