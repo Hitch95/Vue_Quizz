@@ -16,7 +16,7 @@
 import { ref, onMounted, computed } from 'vue'
 import QuizComponent from './components/QuizComponent.vue'
 
-interface Quiz {
+export interface Quiz {
   title: string
   minimum_score: number
   success_message: string
